@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Biến, kiểu dữ liệu và toán tử</title>
+</head>
+<body>
+<!--Bài 1: Viết chương trình nhập điểm-->
+<script>
+    inputr = prompt("nhap diem vat ly")
+    inputr = prompt("nhap diem hoa")
+    inputr = prompt("nhap diem sinh hoc");
+    let vatly = parseInt(inputr)
+    let hoa = parseInt(inputr)
+    let sinhhoc = parseInt(inputr);
+    let diemtb = (vatly+hoa+sinhhoc)/3
+    document.write("di trung binh 3 mon:" +diemtb)
+</script>
+<br>
+<!--Bài 2:  Viết chương trình nhập một giá trị là độ 0C-->
+<script>
+    inputr = prompt("Enter the Celsius");
+    let celsius = parseInt(inputr)
+    let Fahrenheit = ((9*celsius)/5)+(32)
+    document.write("nhiet do: " + Fahrenheit);
+</script>
+<br>
+<!--Bài 3: Viết chương trình tính diện tích hình tròn-->
+<script>
+    inputr = prompt("Enter the r(tinhdientich)");
+    let r1 = parseInt(inputr);
+    let area1 = r1 * r1 * 3.14;
+    document.write("dien tich hinh tron: " + area1);
+</script>
+<br>
+<!--Bài 4: Viết chương trình chu vi hình tròn-->
+<script>
+    inputr = prompt("Enter the r(tinhchuvi)");
+    let r = parseInt(inputr);
+    let area = r * 2 * 3.14;
+    document.write("chu vi hinh tron: " + area);
+</script>
+</body>
+</html>
