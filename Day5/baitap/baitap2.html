@@ -3,9 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <title>Tạo form đơn giản</title>
+    <style>
+        .inputcol2>input{
+            margin-top: 20px;
+        }
+        .inputcol1{
+           color: #d61b06;
+            text-align: right;
+            margin-top: 0px;
+            padding: 0px;
+        }
+        h3{margin-top: -5px;
+            padding: 0px;
+        }
+    </style>
 </head>
 <body>
-<!--phần 1-->
-
+<!--phần 1: Hãy tạo một form với các trường như sau:-->
+<div>
+    <h1>Sở thích của bạn</h1>
+    <table>
+        <tr>
+            <th class="inputcol1">
+                <h3>Họ và tên</h3>
+                <h3>Email</h3>
+                <h3>Sở thích</h3>
+            </th>
+            <th class="inputcol2">
+                <input type="text" name="yourname" style="text-align: left"><br>
+                <input type="text" name="yourname"><br>
+                <!--các sở thích liệt kê-->
+                <input type="checkbox" name="hobby"> Thể thao
+                <input type="checkbox" name="hobby"> Âm nhạc
+                <input type="checkbox" name="hobby"> Đọc sách<br>
+                <input type="checkbox" name="hobby"> Lướt web
+                <input type="checkbox" name="hobby"> Chơi game
+                <input type="checkbox" name="hobby"> Điện ảnh<br>
+                <input type="checkbox" name="hobby"> Du lịch
+            </th>
+        </tr>
+    </table>
+</div>
 </body>
 </html>
