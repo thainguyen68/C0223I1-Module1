@@ -4,45 +4,81 @@
     <meta charset="UTF-8">
     <title>Tạo form đơn giản</title>
     <style>
-        .inputcol2>input{
-            margin-top: 20px;
+        table {
+            width: 500px;
+            height: 250px;
+            margin: 10px 20px 20px 20px;
+            background-color: white;
         }
-        .inputcol1{
-           color: #d61b06;
+
+        form {
+            width: 540px;
+            height: 280px;
+            background-color: aqua;
+            padding-top: 4px;
+        }
+
+        h2 {
+            text-align: center;
+            margin: 0;
+        }
+
+        .title {
+            color: blue;
             text-align: right;
-            margin-top: 0px;
-            padding: 0px;
         }
-        h3{margin-top: -5px;
-            padding: 0px;
+
+        #big-title {
+            background-color: orange;
+            color: white;
+            height: 20px;
+        }
+
+        span {
+            color: red;
         }
     </style>
 </head>
 <body>
-<!--phần 1: Hãy tạo một form với các trường như sau:-->
-<div>
-    <h1>Sở thích của bạn</h1>
+<form>
     <table>
         <tr>
-            <th class="inputcol1">
-                <h3>Họ và tên</h3>
-                <h3>Email</h3>
-                <h3>Sở thích</h3>
-            </th>
-            <th class="inputcol2">
-                <input type="text" name="yourname" style="text-align: left"><br>
-                <input type="text" name="yourname"><br>
-                <!--các sở thích liệt kê-->
-                <input type="checkbox" name="hobby"> Thể thao
-                <input type="checkbox" name="hobby"> Âm nhạc
-                <input type="checkbox" name="hobby"> Đọc sách<br>
-                <input type="checkbox" name="hobby"> Lướt web
-                <input type="checkbox" name="hobby"> Chơi game
-                <input type="checkbox" name="hobby"> Điện ảnh<br>
-                <input type="checkbox" name="hobby"> Du lịch
-            </th>
+            <td id="big-title" colspan="4"><h2>SỞ THÍCH CỦA BẠN</h2></td>
+        </tr>
+        <tr>
+            <td class="title">Họ và tên</td>
+            <td colspan="3"><input type="text" size="35"></td>
+        </tr>
+        <tr>
+            <td class="title">Email</td>
+            <td colspan="3"><input type="text" size="28"></td>
+        </tr>
+        <tr>
+            <td class="title">Sở thích</td>
+            <td><input type="checkbox"><span>Du lịch</span></td>
+            <td><input type="checkbox"><span>Thể thao</span></td>
+            <td><input type="checkbox"><span>Đọc sách</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox"><span>Chơi game</span></td>
+            <td><input type="checkbox"><span>Lướt web</span></td>
+            <td><input type="checkbox"><span>Xem phim</span></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox"><span>Đạp xe</span></td>
+            <td><input type="checkbox"><span>Đá bóng</span></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td colspan="3">
+                <button>Gửi thông tin</button>
+                <button>Nhập lại</button>
+            </td>
         </tr>
     </table>
-</div>
+</form>
 </body>
 </html>
