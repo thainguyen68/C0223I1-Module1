@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fakebook</title>
+    <style>
+        form{
+            border: 1px solid;
+            width: 300px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table style="text-align: center">
+        <tr>
+            <th><span>Username</span></th>
+            <th>
+                <input type="text" id="usr" name="username" placeholder="username">
+            </th>
+        </tr>
+        <tr>
+            <th><span>Password</span></th>
+            <th>
+                <input type="text" id="pss" name="password" placeholder="password">
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" onclick="login()" value="login">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<script>
+
+    function login() {
+        let usr = document.getElementById("usr").value
+        let pss = document.getElementById("pss").value
+        if (usr == "Admin" && pss == "123") {
+            alert("Đăng nhập tài khoản Admin")
+        }
+        else if (usr == "User" && pss == "123"){
+            alert("Đăng nhập tài khoản User")
+        }
+        else {
+            alert("Tài khoản không tồn tại")
+        }
+    }
+</script>
+
+</body>
+</html>
