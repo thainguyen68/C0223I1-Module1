@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luyện tập với cấu trúc if...else...if</title>
+</head>
+<body>
+
+<script>
+    let userName = prompt("Who's there?", ''); //Tạo biến userName nhận giá trị nhập vào từ hộp thoại
+
+    // Kiểm tra giá trị của userName
+    if (userName == 'Admin') {
+        let pass = prompt('Password?', '');
+
+        // khi kiểm tra đúng thì : chạy thông báo chào mừng
+        if (pass == 'TheMaster') {
+            alert('Welcome!');
+        } else if (pass == null) {
+            alert('Canceled.');
+        } else {
+            alert('Wrong password');
+        }
+
+        //Khi ấn vào canceled
+    } else if (userName == null) {
+        alert('Canceled');
+        //=>sai user hoặc pass sẽ chạy
+    } else {
+        alert("I don't know you");
+    }
+</script>
+</body>
+</html>
