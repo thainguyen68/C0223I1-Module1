@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Ứng dụng máy tính</title>
+    <style>
+        #row2 td input {
+            margin-left: 0;
+            padding: 0;
+            width: 50px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>
+                <input type="number" id="numA">
+            </td>
+            <td>
+                <input type="number" id="numB">
+            </td>
+        </tr>
+        <tr id="row2">
+            <td>
+                <input type="button" id="cong" value="Cộng(+)" onclick="congA()">
+            </td>
+            <td>
+                <input type="button" id="tru" value="Trừ(-)" onclick="truA()">
+            </td>
+            <td>
+                <input type="button" id="nhan" value="Nhân(*)" onclick="nhanA()">
+            </td>
+            <td>
+                <input type="button" id="chia" value="Chia(:)" onclick="chiaA()">
+            </td>
+        </tr>
+    </table>
+</form>
+<p id="result"></p>
+</body>
+</html>
+
+<script src="bt3.js"></script>
