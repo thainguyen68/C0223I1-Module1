@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MiniTest</title>
+</head>
+<body>
+
+
+<!--BAI 1 + 2:-->
+<!--<script>-->
+<!--    alert("xin chào")-->
+
+<!--    inputr = prompt("Enter the number");-->
+<!--    let r = parseInt(inputr);-->
+<!--    let area = r * r;-->
+<!--    document.getElementById(area).value;-->
+<!--    alert("area")-->
+<!--</script>-->
+
+
+<!--BAI 3:-->
+<!--<input type="number" name="number" id="numA" placeholder="NumberA">-->
+<!--<input type="number" name="number" id="numB" placeholder="NumberB">-->
+<!--<button onclick="changeNumber()" value="button">Button</button>-->
+<!--<br><h1 id="kq">Result</h1>-->
+<!--<script>-->
+<!--    function changeNumber() {-->
+<!--        let numA = document.getElementById("numA").value;-->
+<!--        let numB = document.getElementById("numB").value;-->
+<!--        let S = numA * numB-->
+<!--        document.getElementById("kq").innerHTML= S;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--BAI 4-->
+<!--a, nhập vào a để tính ra chu vi và diện tích hình vuông-->
+<!--<input type="number" id="inputNum" placeholder="nhập vào độ dài cạnh a của hình vuông">-->
+<!--<button type="button" id="calBtn" onclick="change1()">Tính</button>-->
+<!--<p id="result"></p>-->
+<!--<p id="result1"></p>-->
+
+<!--<script>-->
+<!--    function change1() {-->
+<!--        let inputNum = document.getElementById("inputNum").value;-->
+<!--        let result = inputNum * inputNum;-->
+<!--        let result1 = inputNum * 4;-->
+<!--        document.getElementById('result').innerHTML = "diện tích hình vuông là : " + result;-->
+<!--        document.getElementById('result1').innerHTML = "chu vi hình vuông là : " + result1;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!-- b, nhập a vào b tính a^2 a^b-->
+<!--<input id="inputNum1" placeholder="nhập vào số a">-->
+<!--<input id="inputNum2" placeholder="nhập vào số b">-->
+<!--<button onclick="change2()">Tính</button>-->
+<!--<p id="result"></p>-->
+<!--<p id="result1"></p>-->
+
+<!--<script>-->
+<!--    function change2() {-->
+<!--        let inputNum1 = document.getElementById("inputNum1").value;-->
+<!--        let inputNum2 = document.getElementById("inputNum2").value;-->
+<!--        let result = Math.pow(inputNum1, 2); //math.pow là bình phương-->
+<!--        let result1 = Math.pow(inputNum1, inputNum2);-->
+<!--        document.getElementById('result').innerHTML = "a ^2  = "  + result;-->
+<!--        document.getElementById('result1').innerHTML = "a ^b = " + result1;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--c, nhập vào a b tính tổng từ a đến b:-->
+<!--<input id="inputNum1" placeholder="nhập vào số a">-->
+<!--<input id="inputNum2" placeholder="nhập vào số b">-->
+<!--<button onclick="change3()">Tính</button>-->
+<!--<p id="result"></p>-->
+
+<!--<script>-->
+<!--    function change3() {-->
+<!--        let a = +document.getElementById("inputNum1").value;-->
+<!--        let b = +document.getElementById("inputNum2").value;-->
+<!--        let tong = ((b - a + 1) * (a + b)) / 2; // công thức tính tổng từ a -> b-->
+<!--        console.log(tong)// kiểm thử trên chorme-->
+<!--        if (b < a)-->
+<!--            document.getElementById('result').innerHTML = "Nhập sai";-->
+<!--        else if (a === b) {-->
+<!--            document.getElementById("result").innerHTML = "Tổng các số từ a đến b là : " + a;-->
+<!--        }-->
+<!--        else-->
+<!--            document.getElementById("result").innerHTML = "Tổng các số từ a đến b là : " + tong;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--d,nhập vào a là năm, in ra thế kỷ -->
+<!--<input id="inputNum1" placeholder="nhập vào số năm">-->
+<!--<button onclick="change4()">Tính</button>-->
+<!--<p id="result"></p>-->
+<!--<script>-->
+<!--    function change4() {-->
+<!--        let a = +document.getElementById("inputNum1").value;-->
+<!--        let theKy = parseInt(a/100)+1 ; //-->
+<!--        document.getElementById('result').innerHTML = "năm " +a + " thuộc thế kỷ " +theKy;-->
+<!--    }-->
+<!--</script>-->
+
+
+<!--e, nhp a b c kiểm tra xem 3 cạnh trên có phải là một tam giác:-->
+<input type="number" >
+
+
+<script>
+    function tgiac() {
+        let a = prompt("canh a:");
+        let b = prompt("canh b:");
+        let c = prompt("canh c:");
+        let check = a + b > c && a + c > b && b +c >a
+
+        if (check) {
+            alert("là tam giác")
+        }
+        else {
+            alert("không phải tam giác")
+        }
+
+    }
+</script>
+
+
+
+
+
+</body>
+</html>

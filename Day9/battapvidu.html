@@ -3,53 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <title>Fakebook</title>
-    <style>
-        form{
-            border: 1px solid;
-            width: 300px;
-            height: auto;
-        }
-    </style>
-</head>
-<body>
-<form>
-    <table style="text-align: center">
-        <tr>
-            <th><span>Username</span></th>
-            <th>
-                <input type="text" id="usr" name="username" placeholder="username">
-            </th>
-        </tr>
-        <tr>
-            <th><span>Password</span></th>
-            <th>
-                <input type="text" id="pss" name="password" placeholder="password">
-            </th>
-        </tr>
-        <tr>
-            <td>
-                <input type="button" onclick="login()" value="login">
-            </td>
-        </tr>
-    </table>
-</form>
 
-<script>
 
-    function login() {
-        let usr = document.getElementById("usr").value
-        let pss = document.getElementById("pss").value
-        if (usr == "Admin" && pss == "123") {
-            alert("Đăng nhập tài khoản Admin")
-        }
-        else if (usr == "User" && pss == "123"){
-            alert("Đăng nhập tài khoản User")
-        }
-        else {
-            alert("Tài khoản không tồn tại")
-        }
-    }
-</script>
 
+<!--<form>-->
+<!--    <table style="text-align: center">-->
+<!--        <tr>-->
+<!--            <th><span>Username</span></th>-->
+<!--            <th>-->
+<!--                <input type="text" id="usr" name="username" placeholder="username">-->
+<!--            </th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <th><span>Password</span></th>-->
+<!--            <th>-->
+<!--                <input type="text" id="pss" name="password" placeholder="password">-->
+<!--            </th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <input type="button" onclick="login()" value="login">-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</form>-->
+
+<!--<script>-->
+
+<!--    function login() {-->
+<!--        let usr = document.getElementById("usr").value-->
+<!--        let pss = document.getElementById("pss").value-->
+<!--        if (usr == "Admin" && pss == "123") {-->
+<!--            alert("Đăng nhập tài khoản Admin")-->
+<!--        }-->
+<!--        else if (usr == "User" && pss == "123"){-->
+<!--            alert("Đăng nhập tài khoản User")-->
+<!--        }-->
+<!--        else {-->
+<!--            alert("Tài khoản không tồn tại")-->
+<!--        }-->
+<!--    }-->
+<!--</script>-->
+<div>
+    <!--    <p><span id="p1"></span> + <span id="p11"></span> = <span id="p12"></span></p>-->
+    <!--    <p><span id="p2"></span> + <span id="p21"></span> = <span id="p22"></span></p>-->
+    <!--    <p><span id="p3"></span> + <span id="p31"></span> = <span id="p32"></span></p>-->
+    <!--    <p><span id="p14"></span> + <span id="p41"></span> = <span id="p42"></span></p>-->
+    <!--    <p><span id="p5"></span> + <span id="p51"></span> = <span id="p52"></span></p>-->
+    <!--    <p><span id="p6"></span> + <span id="p61"></span> = <span id="p62"></span></p>-->
+    <!--    <p><span id="p7"></span> + <span id="p71"></span> = <span id="p72"></span></p>-->
+</div>
+
+
+<!--<script>-->
+<!--    inputr = prompt("Enter the a");-->
+<!--    let a = parseInt(inputr);-->
+<!--    inputr = prompt("Enter the b");-->
+<!--    let b = parseInt(inputr);-->
+<!--    let cong1 = a + b;-->
+
+<!--    let tru1 = a - b;-->
+<!--    let nhan1 = a * b;-->
+<!--    let chia1 = a / b;-->
+<!--    let binh1 = a*a + b*b;-->
+<!--    let du1 = a % b;-->
+
+
+<!--    document.getElementById("p1").innerHTML= a-->
+<!--    document.getElementById("p11").innerHTML= b-->
+<!--    document.getElementById("p12").innerHTML= cong1-->
+<!--    document.getElementById("p12").innerHTML= tru1-->
+<!--    document.getElementById("p12").innerHTML= nhan1-->
+<!--    document.getElementById("p12").innerHTML= chia1-->
+<!--    document.getElementById("p12").innerHTML= binh1-->
+
+<!--</script>-->
+
+<!-- r=%  n=? m=? a?-->
+<!--
+A: số tiền nhận
+p: số tiền nhập vào
+R: lãi suất
+r: chu kỳ
+-->
 </body>
 </html>

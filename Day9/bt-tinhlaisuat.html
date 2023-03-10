@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính lãi suất</title>
+</head>
+<body>
+<style>
+  body {
+    margin-top: 250px;
+    text-align: center;
+  }
+
+  #result {
+    color: red;
+  }
+
+  input {
+    background-color: aliceblue;
+    text-align: center;
+  }
+
+  button {
+    background-color: red;
+    color: cornsilk;
+  }
+</style>
+</head>
+<body>
+
+<input type="text" id="money" placeholder="Nhập số tiền vay vào đây!">
+<input type="text" id="rate" placeholder="Lãi suất vay">
+<input type="text" id="cycle" placeholder="Thời hạn vay">
+<button type="button" onclick="save()" name="">change</button>
+<p id="result"></p>
+
+<script>
+  function save() {
+    let money = +document.getElementById("money").value;
+    let cycle = +document.getElementById("cycle").value;
+    let rate = +document.getElementById("rate").value;
+
+    let anpha = (money * (1 + (rate / 100)) ** cycle)
+    console.log(anpha)
+    document.getElementById("result").innerHTML = "Tổng tiền nhận được   " + cycle + " tháng là: " + anpha + "  VND ";
+  }
+
+</script>
+
+
+<!--A: số tiền nhận-->
+<!--p: số tiền nhập vào-->
+<!--R: lãi suất-->
+<!--r: chu kỳ-->
+</body>
+</html>
