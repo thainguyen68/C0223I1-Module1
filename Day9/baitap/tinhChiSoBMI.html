@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+<h3>Tính chỉ số cân nặng</h3>
+<div>
+    <span>Nhập cân nặng: (kg)</span> <input type="text" id="canNang" placeholder="nhập vào đây cân nặng">
+</div><br>
+<div>
+    <span>Nhập chiều cao: (m)</span> <input type="text" id="chieuCao" placeholder="nhập vào đây chiều cao">
+</div><br>
+<button style="color: red" type="button" onclick="kiemTra()"> Kiểm tra</button>
+
+<script>
+    function kiemTra() {
+        let canNang = document.getElementById("canNang").value;
+        let chieuCao= document.getElementById("chieuCao").value;
+        let bmi = canNang / ((chieuCao/100)**2) //chieu cao tính theo cm nên ta chia cho 100
+
+        console.log(bmi)
+
+        if (bmi < 18) {
+            document.write("Thiếu cân");
+        }
+        else if (bmi < 25.0) {
+            document.write("Bình thường");
+        }
+
+        else if (bmi < 30.0) {
+            document.write("Thừa cân");
+        }
+        else {
+            document.write("Béo phì");
+        }
+    }
+</script>
+
+</body>
+</html>
