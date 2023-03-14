@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+<script>
+    let number = parseInt(prompt("Nhập 20 số nguyên tố đầu tiên: "));
+
+    let soUoc = 0; // đếm số ước của số đang xét;
+    let cacSoNguyenTo = 0; // đếm xem đã đủ số lượng số nguyên tố cần in ra chưa;
+    for (let i = 2; i < 1000; i++) { // 2,3,4,5,6,7,8,....,1000
+        if (cacSoNguyenTo < number) { // Nếu số lượng SNT in ra < so với số lượng yêu cầu
+            for (let j = 1; j <= i; j++) {
+                if (i % j === 0) {
+                    soUoc += 1;
+                }
+            }
+            if (soUoc === 2) {
+                document.write(i + "<br>"); //4
+                cacSoNguyenTo += 1; //+1
+            }
+            soUoc = 0; //reset lại sô ước về bằng 0.  Vì số ước phải bằng 2 thì thỏa mãn
+        } else {
+            break;
+        }
+    }
+</script>
+</body>
+</html>
